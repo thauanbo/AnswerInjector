@@ -32,7 +32,7 @@ Javascript
 ## Clone o Projeto
 
 ```bash
-  git clone https://github.com/thauanbo/Insert_Script.git
+  git clone https://github.com/thauanbo/AnswerInjector.git
 ```
 
 ## Variáveis de Ambiente
