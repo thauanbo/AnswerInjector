@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+http-client.private.env.json
+/dataSources/
+/dataSources.local.xml
+# Env
+/idea/
+vcs.xml
+/ideia/
+modules.xml
+/idea/
+misc.xml
+/idea/
+Burla.iml
