@@ -12,6 +12,7 @@ btnPush.onclick = processQuestions;
 document.body.appendChild(btnPush);
 footer.appendChild(btnPush);
 
+//Array realizado com ajuda de IA
 async function processQuestions() {
     const form = document.querySelector('form');
     const elementosQuestion = form.querySelectorAll('[id^="question"]');
@@ -32,7 +33,7 @@ async function processQuestions() {
             });
         });
 
-        //Implementação para indexar todas as questões para API
+        //Realizado com ajuda da IA, implementação para indexar todas as questões para API
         const input = questions.map((q, index) => `${index + 1} = ${q.questionText}`).join('\n');
 
         await sendMessage(input, questions);
@@ -63,7 +64,7 @@ async function sendMessage(input, questions) {
         const data = await response.json();
         const messageContent = data.choices?.[0]?.message?.content || 'No response received.';
 
-        // Realiza inserção dupla na div
+        // Com ajuda de IA para realizar inserção dupla na div
         const answers = messageContent.split('\n');
         questions.forEach((q, index) => {
             const infoDiv = q.elemento.querySelector('.info');
